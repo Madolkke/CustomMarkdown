@@ -8,10 +8,11 @@
       <e p="customMD" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="ConfReader.cs" t="Include" />
+        <e p="Converter.cs" t="Include" />
         <e p="CSS.cs" t="Include" />
         <e p="customMD.csproj" t="IncludeRecursive" />
+        <e p="Generator.cs" t="Include" />
         <e p="HTML.cs" t="Include" />
-        <e p="HTMLGenerator.cs" t="Include" />
         <e p="MDDOM.cs" t="Include" />
         <e p="MDReader.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
@@ -21,6 +22,8 @@
             </e>
           </e>
         </e>
+        <e p="Parser.cs" t="Include" />
+        <e p="Pattern.cs" t="Include" />
         <e p="Program.cs" t="Include" />
       </e>
       <e p="packages" t="ExcludeRecursive" />

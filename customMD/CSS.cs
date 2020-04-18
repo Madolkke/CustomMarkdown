@@ -29,7 +29,7 @@ namespace customMD{
             return this;
         }
 
-        public static string parse(Style style){
+        public static string parse(string style){
             return style.ToString().Replace('_', '-');
         }
 
@@ -55,16 +55,14 @@ namespace customMD{
         }*/
     }
 
-    public enum Style{
-        text_align
-    }
+    
 
     public class Selector{
-        protected Dictionary<Style, string> Styles;
+        protected Dictionary<string, string> Styles;
         protected int extra_indentation;
         
         protected Selector(){
-            Styles = new Dictionary<Style, string>();
+            Styles = new Dictionary<string, string>();
             extra_indentation = 0;
         }
 
@@ -73,7 +71,7 @@ namespace customMD{
             return this;
         }
 
-        public Selector addStyle(Style style, string style_value){
+        public Selector addStyle(string style, string style_value){
             Styles.Add(style, style_value);
             return this;
         }

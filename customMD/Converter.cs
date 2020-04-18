@@ -153,13 +153,6 @@ namespace customMD{
             return null;
         }
 
-        public static void Main(string[] args){
-            //                          ↓此处填入md文件路径
-            MDDOM mddom = new MDReader("").Read();
-            Converter converter = new Converter(mddom);
-            converter.InitialConvert();
-            converter.Convert();
-            Console.WriteLine(converter.html.ToString());
-        }
+       
     }
 }

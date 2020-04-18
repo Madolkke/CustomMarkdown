@@ -32,6 +32,10 @@ namespace customMD{
 
         public Mark addHead(Mark mark) => this.head_mark.addChildMark(mark);
 
+        public void AddCSS(CSS css){
+            this.addHead(new Mark(css.updateIndentation(3).ToString(), null, MarkType.style));
+        }
+
         public Mark addSBody(string content, MarkType mt) =>
             this.body_mark.addSChildMark(content, mt);
         public Mark addSHead(string content, MarkType mt) =>
@@ -58,7 +62,7 @@ namespace customMD{
         a, p, img, b, i,
         h1,h2,h3,h4,h5,h6,
         div, span, code, blockquote,
-        ul, ol, li,
+        ul, ol, li, style,
             
     }
     public enum PropertyType{
@@ -118,6 +122,7 @@ namespace customMD{
             return this;
         }
 
+        
         public Mark addChildMark(string pre_content, string post_content, MarkType mt){
             childMarks.Add(new Mark(this.generation + 1, pre_content, post_content, mt));
             return childMarks.Last();
@@ -131,6 +136,10 @@ namespace customMD{
         public Mark addSChildMark(string content, MarkType mt){
             childMarks.Add((new Mark(this.generation + 1, content, null, mt)));
             return childMarks.Last();
+        }
+
+        public Mark AddExternalContent(string ec){
+            return this.addChildMark(new Mark(ec, null, MarkType.span));
         }
 
         public static Mark createHtmlRootMark(){

@@ -295,6 +295,19 @@ namespace customMD{
             this.raw = raw;
         }
     }
+
+    public class MDC_CustomSingleComponent : MDC_SingleComponent{
+        public int identifier;
+        public List<string> contents;
+
+        public MDC_CustomSingleComponent(int identifier, List<string> contents){
+            this.identifier = identifier;
+            this.contents = contents;
+        }
+        public void AddContent(string content){
+            this.contents.Add(content);
+        }
+    }
     
     //TODO table didn't set
     
