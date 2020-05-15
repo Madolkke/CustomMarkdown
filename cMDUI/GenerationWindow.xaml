@@ -1,0 +1,38 @@
+﻿<Window x:Class="WpfApp1.GenerationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        xmlns:system="clr-namespace:System;assembly=mscorlib"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Background="{DynamicResource MaterialDesignPaper}"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        Title="GenerationWindow" Height="900" Width="1440">
+    <Grid>
+        
+        <StackPanel Orientation="Vertical">
+            <materialDesign:ColorZone Padding="16" materialDesign:ShadowAssist.ShadowDepth="Depth2"
+                                      Mode="PrimaryMid" DockPanel.Dock="Top">
+                <DockPanel>
+                    <Button x:Name="BackToStyleButton" Style="{StaticResource MaterialDesignIconButton}" Click="BackToStyle" DockPanel.Dock="Right">
+                        <materialDesign:PackIcon Kind="ArrowBack" Foreground="Azure"></materialDesign:PackIcon>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" Name="tt">Generator Settings</TextBlock>
+                </DockPanel>
+            </materialDesign:ColorZone>
+            <Label x:Name="GWChooseDirLabel" Style="{StaticResource MaterialDesignLabel}" HorizontalAlignment="Center" FontSize="22" Margin="0 20 0 0">Choose Generation Directory</Label>
+            <Button x:Name="ChooseGenerationDirButton" Style="{StaticResource MaterialDesignFlatLightBgButton}" Width="400" FontSize="25" Height="60" Foreground="Azure" Click="ChooseGenerationDir" Margin="0 50 0 50">Choose Generation Dir</Button>
+            <Label x:Name="GWChooseMarkdownFileLabel" Style="{StaticResource MaterialDesignLabel}" HorizontalAlignment="Center" FontSize="22" Margin="0 20 0 0">Choose Markdown File</Label>
+            <Button x:Name="ChooseMarkdownFileButton" Style="{StaticResource MaterialDesignFlatLightBgButton}" Width="400" FontSize="25" Height="60" Foreground="Azure" Click="ChooseMarkdownFile" Margin="0 50 0 50">Choose Markdown File</Button>
+            <Label x:Name="GWChooseConfigFileLabel" Style="{StaticResource MaterialDesignLabel}" HorizontalAlignment="Center" FontSize="22" Margin="0 20 0 0">Choose Markdown File</Label>
+            <Button x:Name="ChooseConfigFileButton" Style="{StaticResource MaterialDesignFlatLightBgButton}" Width="400" FontSize="25" Height="60" Foreground="Azure" Click="ChooseConfigFile" Margin="0 50 0 50">Choose Config File</Button>
+            <Button x:Name="GenerateButton" Style="{StaticResource MaterialDesignFlatLightBgButton}" Width="400" FontSize="25" Height="60" Foreground="Azure" Click="Generate" Margin="0 0 0 50">Generate</Button>
+            
+            
+            
+        </StackPanel>
+        
+    </Grid>
+</Window>

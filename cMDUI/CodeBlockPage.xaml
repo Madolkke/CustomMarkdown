@@ -1,0 +1,54 @@
+﻿<Page x:Class="WpfApp1.CodeBlockPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:WpfApp1"
+      mc:Ignorable="d"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      Background="{DynamicResource MaterialDesignPaper}"
+      TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+      Title="SplitterPage">
+    <Grid>
+        <materialDesign:Card Height="700" Width="1200">
+            <StackPanel Orientation="Vertical" Margin="30 100 0 0">
+                <StackPanel Orientation="Horizontal">
+                    <Label Style="{StaticResource MaterialDesignLabel}" FontSize="20" Content="Font Size:   "></Label>
+                    <TextBlock>
+                        <TextBox x:Name="CodeBlockFontSize" Style="{StaticResource MaterialDesignTextBox}" Margin="0 10 0 10" FontSize="20" Text="Input Here"></TextBox>
+                    </TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Style="{StaticResource MaterialDesignLabel}" FontSize="20" Content="Margin Left:   "></Label>
+                    <TextBlock>
+                        <TextBox x:Name="CodeBlockMarginLeft" Style="{StaticResource MaterialDesignTextBox}" Margin="0 10 0 10" FontSize="20" Text="Input Here"></TextBox>
+                    </TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Style="{StaticResource MaterialDesignLabel}" FontSize="20" Content="Margin Top:   "></Label>
+                    <TextBlock>
+                        <TextBox x:Name="CodeBlockMarginTop" Style="{StaticResource MaterialDesignTextBox}" Margin="0 10 0 10" FontSize="20" Text="Input Here"></TextBox>
+                    </TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Style="{StaticResource MaterialDesignLabel}" FontSize="20" Content="Margin Right:   "></Label>
+                    <TextBlock>
+                        <TextBox x:Name="CodeBlockMarginRight" Style="{StaticResource MaterialDesignTextBox}" Margin="0 10 0 10" FontSize="20" Text="Input Here"></TextBox>
+                    </TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Style="{StaticResource MaterialDesignLabel}" FontSize="20" Content="Margin Bottom:   "></Label>
+                    <TextBlock>
+                        <TextBox x:Name="CodeBlockMarginBottom" Style="{StaticResource MaterialDesignTextBox}" Margin="0 10 0 10" FontSize="20" Text="Input Here"></TextBox>
+                    </TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Style="{StaticResource MaterialDesignLabel}" FontSize="20" Content="Alignment: "></Label>
+                    <RadioButton x:Name="CodeBlockAlignRbLeft" Style="{StaticResource MaterialDesignTabRadioButton}" Margin="4" IsChecked="True" Content="LEFT" />
+                    <RadioButton x:Name="CodeBlockAlignRbCenter" Style="{StaticResource MaterialDesignTabRadioButton}" Margin="4" IsChecked="False" Content="CENTER" />
+                    <RadioButton x:Name="CodeBlockAlignRbRight" Style="{StaticResource MaterialDesignTabRadioButton}" Margin="4" IsChecked="False" Content="RIGHT" />
+                </StackPanel>
+            </StackPanel>
+        </materialDesign:Card>
+    </Grid>
+</Page>

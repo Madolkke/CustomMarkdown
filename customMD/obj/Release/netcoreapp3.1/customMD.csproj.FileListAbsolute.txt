@@ -1,0 +1,11 @@
+C:\Users\madol\Desktop\testsolution\customedMD\customMD\bin\Release\netcoreapp3.1\customMD.exe
+C:\Users\madol\Desktop\testsolution\customedMD\customMD\bin\Release\netcoreapp3.1\customMD.deps.json
+C:\Users\madol\Desktop\testsolution\customedMD\customMD\bin\Release\netcoreapp3.1\customMD.runtimeconfig.json
+C:\Users\madol\Desktop\testsolution\customedMD\customMD\bin\Release\netcoreapp3.1\customMD.runtimeconfig.dev.json
+C:\Users\madol\Desktop\testsolution\customedMD\customMD\bin\Release\netcoreapp3.1\customMD.dll
+C:\Users\madol\Desktop\testsolution\customedMD\customMD\bin\Release\netcoreapp3.1\customMD.pdb
+C:\Users\madol\Desktop\testsolution\customedMD\customMD\obj\Release\netcoreapp3.1\customMD.csprojAssemblyReference.cache
+C:\Users\madol\Desktop\testsolution\customedMD\customMD\obj\Release\netcoreapp3.1\customMD.AssemblyInfoInputs.cache
+C:\Users\madol\Desktop\testsolution\customedMD\customMD\obj\Release\netcoreapp3.1\customMD.AssemblyInfo.cs
+C:\Users\madol\Desktop\testsolution\customedMD\customMD\obj\Release\netcoreapp3.1\customMD.dll
+C:\Users\madol\Desktop\testsolution\customedMD\customMD\obj\Release\netcoreapp3.1\customMD.pdb
